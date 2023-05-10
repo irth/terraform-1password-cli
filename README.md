@@ -15,7 +15,8 @@ The `op://` URL syntax description can be found [here](https://developer.1passwo
 
 ```terraform
 module "op" {
-  source = "./1password-cli"
+  source  = "irth/1password-cli/external"
+  version = "1.0.1"
   secrets = {
     ovh = {
       application_key    = "op://Terraform/ovh/application_key"
